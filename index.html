@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portofolio</title>
+        <link href="style.css" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script>
+
+            function toggleMenu(){
+                var menu = document.getElementById('menu-3');
+                //IE > 10 
+                menu.classList.toggle('menu-open');
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <div id="pertama">
+
+            <div id="header">
+                <img src="assets/logo.jpg" id="logo" alt="">
+                <div id="menu">
+                    <img src="assets/nav-icon.png" id="nav-icon" alt="" onclick="toggleMenu();">
+                    <div id="menu-text" onclick="toggleMenu();">Menu</div> 
+                    <div class="konten" id="menu-3">
+                        <a href="#pertama" class="kolom_3">Hallo</a>
+                        <a href="#kedua"   class="kolom_3 kolom_3_tengah" onclick="return smoothScroll('kedua')">Karya</a>
+                        <a href="#ketiga"  class="kolom_3"                onclick="return smoothScroll('ketiga')">Kontak</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+
+            <div class="konten">
+
+                <div id="box_sd">
+                    <h1>Selamat Datang <br> di Website Labados</h1>
+                    <a href="#kedua">Lihat Karya</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="kedua">
+            <div class="konten">
+                <h2> Karya Saya</h2>
+
+                <div class="kolom_3">
+                    <a href="setiap_folio.html">
+                        <div class="setiap_karya_gambar">
+                            <img src="assets/background.jpg" alt="">
+                            <p>Judul Karya</p>
+                        </div>
+                    </a>
+                    <p class="deskripsi"> Ini deksripsi dari setiap proyek yang ditampilkan</p>
+                </div>
+
+                <div class="kolom_3 kolom_3_tengah">
+                    <a href="setiap_folio.html">
+                        <div class="setiap_karya_gambar">
+                            <img src="assets/background.jpg" alt="">
+                            <p>Judul Karya</p>
+                        </div>
+                    </a>
+                    <p class="deskripsi"> Ini deksripsi dari setiap proyek yang ditampilkan</p>
+                </div>
+
+                <div class="kolom_3">
+                    <a href="setiap_folio.html">
+                        <div class="setiap_karya_gambar">
+                            <img src="assets/background.jpg" alt="">
+                            <p>Judul Karya</p>
+                        </div>
+                    </a>
+                    <p class="deskripsi"> Ini deksripsi dari setiap proyek yang ditampilkan</p>
+                </div>
+
+            <div class="clear"></div>    
+            </div>
+        </div>
+
+        <div id="ketiga">
+            <div class="konten">
+                <h2>Kontak Saya</h2>
+
+                <div class="kolom_2">
+                    <form action="" novalidate onsubmit="return validasi(this)">
+
+                        <input type="text" name="nama" placeholder="Nama">
+                        <input type="email" name="email" placeholder="Email">
+                        <textarea name="pesan" placeholder="pesan" rows="8" cols="40"></textarea>
+                        <input type="submit" name="submit" value="Kirim">
+                        
+                    </form>
+                </div>
+
+                <div class="kolom_2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15864.813872726756!2d106.95207185!3d-6.236890600000001!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1548220322348" width="600" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p> &copy; Labados 2019 </p>
+        </div>
+
+        <script src="folio.js"></script>
+    </body>
+
+</html>

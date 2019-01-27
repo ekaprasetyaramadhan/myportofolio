@@ -1,0 +1,389 @@
+*{
+    margin: 0; padding: 0px;
+    font-family: sans-serif; font-weight: normal;
+    max-width: 100% !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%; max-height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+/*-- bagian pertama --*/
+
+#pertama{
+    background: url(assets/background.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+
+    height: 690px;
+    padding-top: 20px;
+    
+}
+
+.konten{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.kolom_3{
+    width: 31%;   /*-- 300/960 * 100 = 31% --*/
+    float: left;
+}
+
+.kolom_3_tengah{
+    margin: 0 3%;
+}
+
+#logo{
+    display: block; width: 100px; margin: 0 auto;
+}
+
+#nav-icon{
+    display: none;
+}
+
+#menu{
+    background-color: #ff9933;
+    height: 50px; line-height: 50px;
+    font-size: 20px; margin-top: 20px;
+}
+
+#menu-text{
+    display: none;
+    color: white;
+    padding-left: 10px;
+}
+
+#menu a{
+    display: block; text-align: center; color: white;
+}
+
+#menu a:hover{
+    background-color: #fc7e00;
+}
+
+#box_sd{
+    background-color: rgba(255, 153, 51, 0.5);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 80px 0;
+    padding: 20px 0;
+}
+
+#box_sd a{
+    display: block;
+    border: 2px solid white;
+    color: #fc7e00;
+    padding: 5px 0;
+    width: 300px;
+    margin: 25px auto 0 auto;
+}
+
+#box_sd a:hover{
+    background-color: #ff9933;
+    color: white;
+}
+
+
+/*-- bagian kedua --*/
+#kedua{
+    background-color: #ff9933;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 40px;
+    padding: 30px 0 45px 0;
+
+}
+
+#kedua img{
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.setiap_karya_gambar{
+    position: relative;
+}
+
+.setiap_karya_gambar p{
+    position: absolute;
+    top: 0px; left: 25px;
+    width: 250px; height: 250px; line-height: 250px;
+    text-align: center; font-size: 25px;
+    background-color: rgba(255,255,255, 0.8);
+    color: #ff9933;
+    border-radius: 50%;
+    display: none;
+}
+
+.setiap_karya_gambar:hover p{
+    display: block;
+}
+
+.deskripsi{
+    font-size: 22px;
+}
+
+
+
+
+/*-- bagian ketiga --*/
+ .kolom_2{
+     float: left;
+     width: 46%;
+     margin: 0 1.5%;
+ }
+
+ #ketiga h2{
+     text-align: center;
+     color: #ff9933;
+ }
+
+ #ketiga input, #ketiga textarea{
+     display: block;
+     width: 100%;
+     height: 30px;
+     margin-bottom: 12px;
+     border: 2px solid #ff9933;
+ }
+
+ #ketiga textarea{
+     height: 130px;
+ }
+
+ input[type="submit"]{
+     background-color: #ff9933;
+     color: white;
+ }
+
+ input[type="submit"]:hover, .panah_box:hover{
+     cursor: pointer;
+     background-color: #fc7e00;
+ }
+
+ #ketiga iframe{
+     max-width: 450px;
+ }
+
+/*-- bagian setiap folio --*/
+
+.panah_box{
+    width: 60px; height: 60px; line-height: 60px;
+    color: white; background-color: #ff9933;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+#karya_box{
+    width: 83%;
+    margin: 0 20px;
+}
+
+.panah_box, #karya_box, #karya_box_kr, #karya_box_knn{
+    float: left;
+}
+
+#karya_box_knn{
+    width: 500px; height: 350px;
+}
+
+#karya_box_kr{
+    width: 29%; padding: 13px 10px 0 10px;
+    height: 320px;
+    background-color: #ff9933;
+    color: white;
+}
+
+#karya_box_kr h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#karya_box_kr .deskripsi{
+    font-size: 18px;
+}
+
+#karya_lain{
+    width: 450px; margin: 50px auto 0 auto;
+}
+
+#karya_lain img{
+    display: block;
+    float: left;
+    width: 140px;
+    margin-left: 10px;
+}
+
+
+.error{
+    color: red;
+    margin-top: -12px;
+}
+
+/*-- bagian footer --*/
+#footer{
+    background-color: #ff9933;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+
+
+
+/*--    responsive --*/
+
+@media only screen and (max-width:1024px){
+
+    #bos_sd{
+        font-size: 26px;
+    }
+
+    #pertama{
+        height: auto;
+    }
+    
+    h2{
+        font-size: 34px;
+    }
+
+    .setiap_karya_gambar p{
+        position: static;
+        margin: 0 auto;
+        display: block;
+        height: auto;
+        color: white;
+        background-color: transparent;
+        line-height: normal;
+    }
+/*-- untuk halaman folio --*/
+
+    #karya_box, #karya_box_kr, #karya_box_knn{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    #karya_box img{
+        width: 100%;
+    }
+
+    #karya_box_kr{
+        padding: 2%;
+        width: 86%;
+    }
+
+    .panah_box{
+        position: fixed;
+        top: 30%;
+    }
+
+    .panah_box_next{
+        right: 0%;
+    }
+
+    .panah_box_prev{
+        left: 0%;
+    }
+
+    #karya_lain img{
+        width: 30%;
+    }
+}
+
+
+@media only screen and (max-width:480px){
+
+    #menu{
+        position: relative;
+    }
+
+    #nav-icon{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+    }
+
+    #pertama{
+        background-attachment: fixed;
+    }
+
+    .kolom_3, .kolom_2{
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    #box_sd{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    #kedua img{
+        width: 200px; height: 200px;
+    }
+
+    #kedua p{
+        font-size: 18px;
+
+    }
+
+    #kolom .kolom_3{
+        margin: 10px auto;
+    }
+
+
+    /*-- nav menu --*/
+
+    #menu .konten{
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    #menu-text{
+        display: block;
+    }
+
+    .menu-open{
+        max-height: 100% !important;
+    }
+
+    #menu{
+        height: auto;
+        font-size: 15px;
+    }
+
+    #menu a{
+        border-bottom: 1px solid white;
+    }
+
+}

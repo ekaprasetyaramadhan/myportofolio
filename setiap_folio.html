@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portofolio</title>
+        <link href="style.css" rel="stylesheet">
+        <script>
+            function toggleMenu(){
+                var menu = document.getElementById('menu-3');
+                //IE > 10 
+                menu.classList.toggle('menu-open');
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <div id="pertama">
+
+            <div id="header">
+                <img src="assets/logo.jpg" id="logo" alt="">
+                <div id="menu">
+                    <img src="assets/nav-icon.png" id="nav-icon" alt="" onclick="toggleMenu();">
+                    <div id="menu-text" onclick="toggleMenu();">Menu</div> 
+                    <div class="konten" id="menu-3">
+                        <a href="index.html"            class="kolom_3">Hallo</a>
+                        <a href="index.html #kedua"     class="kolom_3 kolom_3_tengah" onclick="return smoothScroll('kedua')">Karya</a>
+                        <a href="index.html #ketiga"    class="kolom_3"                onclick="return smoothScroll('ketiga')">Kontak</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top:50px;"></div>
+
+            <div class="konten">
+
+                <div class="panah_box panah_box_prev" onclick="ganti_prev()"> prev </div>
+
+                    <div id="karya_box">
+
+                        <div id="karya_box_kr">
+                            <h3>Judul Karya</h3>
+                            <p class="deskripsi"> Ini contoh deskripsi yang lebih panjang dari setiap karya yang ditampilkan</p>
+                        </div>
+
+                        <div id="karya_box_knn">
+                            <img src="assets/jsdom.png" alt="" id="target_gambar">
+                        </div>
+
+                    </div>
+                
+                <div class="panah_box panah_box_next" onclick="ganti_next()"> next </div>
+                
+                <div class="clear"></div>
+                
+                <div id="karya_lain">
+                    <img src="assets/js-dasar.png" alt=""   onclick="ganti_gambar(this)" class="0">
+                    <img src="assets/js-objek.png" alt=""   onclick="ganti_gambar(this)" class="1">
+                    <img src="assets/jsdom.png"    alt=""   onclick="ganti_gambar(this)" class="2">
+                </div>
+
+            </div>
+
+
+        <div class="clear"></div>
+        <div id="footer">
+                <p> &copy; Labados 2019 </p>
+        </div>
+
+        <script src="folio.js"></script>
+    </body>
+</html>
